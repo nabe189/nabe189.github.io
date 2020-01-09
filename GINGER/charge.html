@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+ <html lang="ja">
+ <head>
+ <meta charset="UTF-8">
+ <title>GINGER</title>
+ <link rel="stylesheet" href="css/style.css">
+ <script src="js/openclose.js"></script>
+ <link rel="shortcut icon" type="image/x-icon" href="images/GINGER.png" />
+ <script language="JavaScript">
+		var money=0, change=0;
+    function money1000(){
+		 alert("1000円入りました");
+		 money = money + 1000;
+		 change = change + 1000;
+		 document.getElementById("textMoney").value = money;
+		 document.getElementById("textChange").value = change;
+		}
+    function money500(){
+		 alert("500円入りました");
+		 money = money + 500;
+		 change = change + 500;
+		 document.getElementById("textMoney").value = money;
+		 document.getElementById("textChange").value = change;
+		}
+		function money100(){
+		 alert("100円入りました");
+		 money = money + 100;
+		 change = change + 100;
+		 document.getElementById("textMoney").value = money;
+		 document.getElementById("textChange").value = change;
+
+		}
+		function money10(){
+		 alert("10円入りました");
+		 money = money + 10;
+		 change = change + 10;
+		 document.getElementById("textMoney").value = money;
+		 document.getElementById("textChange").value = change;
+		}
+ </script>
+</head>
+
+<header>
+  <a href="index.html"><img class="logo" src="images/logo.png"></a>
+  <a href="visit.html" class="menu">参拝</a>
+  <a href="charge.html" class="menu">お賽銭</a>
+  <a href="ema.html" class="menu">絵馬</a>
+  <a href="omikuji.html" class="menu">御神籤</a>
+  <a href="gokitou.html" class="menu">御祈祷</a>
+  <a href="https://www.instagram.com/ginger_official_insta/" class="login"><img class="instagram" src="images/icon_instagram.png"></a>
+  <a href="#" class="login">ログイン</a>
+  <a href="about.html" class="login">会社概要</a>
+</header>
+
+<main>
+ <div class="base">
+  <h2>| お賽銭</h2>
+  <p>お賽銭チャージ</p>
+  <div class="osaisen">
+ 　<img class="img-osaisen" src="images/osaisen.jpeg">
+  <div class="money-option">
+   <div class="money">
+　   <form name="form1" action="javascript:money1000()">
+　   <input class="btn2" type="submit" value="+1000円">
+  　</form>
+   </div>
+   <div class="money">
+ 　 <form name="form2" action="javascript:money500()">
+ 　 <input class="btn2" type="submit" value="+500円">
+  　</form>
+   </div>
+   <div class="money">
+ 　 <form name="form3" action="javascript:money100()">
+ 　 <input class="btn2" type="submit" value="+100円">
+  　</form>
+   </div>
+   <div class="money">
+  　<form name="form4" action="javascript:money10()">
+ 　 <input class="btn2" type="submit" value="+10円">
+　  </form>
+   </div>
+ </div>
+ 　<form name="form5">
+ 　<p>残高</p>
+   <div class="contact-form">
+    <input type="text" id="textMoney" value=350 align="center">
+   </div>
+ 　</form>
+  </div>
+ </div>
+</main>
+
+
+<div>
+<aside id="mainimg">
+<div class="slide0">slide0</div>
+<div class="slide1">slide1</div>
+<div class="slide2">slide2</div>
+<div class="slide3">slide3</div>
+</aside>
+</div>
+
+</html>

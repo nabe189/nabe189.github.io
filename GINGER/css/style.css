@@ -1,0 +1,286 @@
+@charset "utf-8";
+/*google fontsの読み込み*/
+@import url('https://fonts.googleapis.com/css?family=Poiret+One&display=swap');
+/*slide.cssの読み込み*/
+@import url(slide.css);
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #fff;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	font-size: 12px;
+	line-height: 2;
+	background: #e4e9e5;
+	-webkit-text-size-adjust: none;
+}
+
+h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form,input,textarea {margin: 0px;padding: 0px;font-size: 100%;font-weight: normal;}
+ul {list-style-type: none;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 100%;border-spacing: 0;}
+iframe {width: 100%;}
+
+a {
+	text-decoration: none;
+  opacity:1.0;
+	transition: 0.4s;	/
+}
+a:hover {
+  opacity:1.0;
+}
+
+header{
+  height:65px;
+  width:100%;
+  background-color:rgba(105, 96, 96,0.9);
+  color:white;
+	position:fixed;
+  top:0;
+  z-index:10;
+}
+.logo{
+  float:left;
+  height:65px;
+  width:auto;
+  padding:0px 20px;
+}
+.menu{
+  float:left;
+  padding:20px 15px;
+  width:50px;
+  color: white;
+  background-color:rgba(105, 96, 96,0);
+  text-align: center;
+}
+.menu:hover,.logo:hover{
+  opacity:1.0;
+  background-color:rgba(105, 96, 96,0.7);
+	transition: 0.4s;
+}
+.login{
+  float: right;
+  padding:20px 15px;
+  color: white;
+	width: 50px;
+  text-align: center;
+  background-color:rgba(105, 96, 96,0);
+}
+.login:hover{
+  opacity: 1.0;
+  background-color:rgba(105, 96, 96,0.7);
+}
+.instagram{
+	height: 25px;
+	width: 25px;
+	padding: 0px;
+}
+main{
+  width:100%;
+  text-align: center;
+  color: white;
+}
+.logo2{
+  width: 280px;
+  height: 180px;
+	margin-top: 65px;
+	padding:40px 0;
+}
+.news{
+	margin: 0 auto;
+  width:90%;
+  background-color: white;
+  opacity: 0.8;
+	overflow: hidden;
+}
+.about{
+	color: black;
+	opacity:1;
+	text-shadow: none;
+	text-align:left;
+	padding-left: 80px;
+}
+.about h2{
+	font-size: 24px;
+}
+.about dt {
+	float: left;
+	padding-left: 15px;
+	width: 9em;
+	letter-spacing: 0.1em;
+}
+.about dd {
+	padding-left: 9em;
+}
+.new{
+	background-color: red;
+	padding:2px 5px;
+	color: white;
+	margin-left: 10px;
+	font-size: 8px;
+	opacity: 1;
+}
+
+/*about.html*/
+.about2{
+	margin: 0 auto;
+  width:90%;
+  background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	color: black;
+	opacity:1;
+	text-shadow: none;
+	text-align:left;
+	padding-left: 80px;
+	padding-bottom: 65px;
+	margin-bottom: 40px;
+	font-size: 12px;
+}
+.about2 h2{
+	padding-top: 15px;
+	font-size: 24px;
+}
+.about2 h3{
+	padding-top:20px;
+	font-size: 18px;
+	padding-left: 15px;
+	padding-bottom: 15px;
+}
+.about2 p{
+	padding-left: 15px;
+}
+.Taishi{
+	width:30%;
+	margin: 15px;
+	float: left;
+}
+.CEO{
+	text-align: right;
+	margin-right: 20px;
+}
+.pr{
+	padding-right: 95px;
+}
+.googlemap{
+	padding-left: 15px;
+	padding-top: 20px;
+	opacity:1;
+	width:60%;
+}
+.contact-form {
+  padding-top: 20px;
+}
+.contact-form input, textarea{
+  width: 400px;
+  padding: 10px;
+  font-size: 12px;
+  border: 1px solid #dee7ec;
+	margin-left: 15px;
+	margin-bottom: 15px;
+}
+.contact-submit{
+  background-color: #dee7ec;
+  color:black;
+}
+
+/*omikuji.html*/
+.base{
+	margin: 0 auto;
+  width:90%;
+  background-color: rgba(255, 255, 255, 0.8);
+	overflow: hidden;
+	color: black;
+	opacity:1;
+	text-shadow: none;
+	text-align:left;
+	margin-top: 100px;
+	padding-left: 80px;
+	padding-bottom: 65px;
+	margin-bottom: 40px;
+	font-size: 12px;
+}
+.base h2{
+	font-size: 24px;
+}
+.base p{
+	padding-left: 15px;
+}
+.img-omikuji{
+	padding-left: 15px;
+	padding-top: 30px;
+	width: 40%;
+}
+.start{
+  background-color: rgba(105, 96, 96, 0.9);
+  cursor: pointer;
+	padding: 24px 40px;
+	margin-left: 200px;
+  display: inline-block;
+  opacity: 1;
+	font-size: 30px;
+	color: white;
+}
+
+/*visit.html*/
+.ise{
+	width: 80%;
+	padding-left: 15px;
+}
+.namaishi{
+	padding-left: 15px;
+}
+.shrine{
+	font-size: 16px;
+	padding-top: 20px;
+}
+/*omamori.html*/
+.omamori-type{
+	padding-left: 15px;
+}
+.btn{
+	font-size: 18px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	width: 100px;
+	margin-left: 15px;
+	background-color: rgba(105, 96, 96, 0.6);
+	color: white;
+	border: 0.5px;
+}
+.btn:hover{
+	background-color: rgba(105, 96, 96, 0.9);
+}
+/*ema.html*/
+#canvas-zone{
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+/*charge.html*/
+.img-osaisen{
+	width: 40%;
+	padding-right: 30px;
+	padding-top: 20px;
+	float: left;
+}
+.btn2{
+	font-size: 18px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 120px;
+	margin-right: 10px;
+	background-color: rgba(105, 96, 96, 0.6);
+	color: white;
+	border: 0.5px;
+}
+.btn2:hover{
+	background-color: rgba(105, 96, 96, 0.9);
+}
+.money{
+	float: left;
+}
+.money-option{
+	padding-top: 50px; 
+	float: top;
+}
